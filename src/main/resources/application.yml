@@ -1,0 +1,13 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: client3
+eureka:
+  instance:
+    instance-id: client3
+  client:
+    service-url:
+      defaultZone: http://host.docker.internal:8081/eureka
+
